@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Imprimante 3D miniature – Projet | Eliot MAMAN</title>
+  <meta name="description" content="Conception d'une imprimante 3D compacte (~10×10×20 cm, volume d'impression ~4×4×6 cm). CAO complète à 17 ans, modélisation des pièces mécaniques." />
+
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4 md:py-3">
+
+      <a href="/index.html" class="font-semibold text-lg md:text-xl text-gray-900 hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 rounded">
+        <span class="block">Eliot MAMAN</span>
+        <span class="block text-xs font-normal text-gray-500">Projet technique</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex flex-row gap-6 text-sm font-medium text-gray-700">
+        <a href="/index.html#projets" class="hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 rounded">Tous les projets</a>
+        <a href="/index.html#contact" class="hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 rounded">Contact</a>
+      </nav>
+
+      <!-- Mobile nav -->
+      <details class="relative md:hidden">
+        <summary class="p-2 border border-gray-300 rounded text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 flex items-center cursor-pointer select-none">
+          <span class="sr-only">Menu</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </summary>
+
+        <nav class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-md flex flex-col gap-4 p-4 text-sm font-medium text-gray-700 z-50">
+          <a href="/index.html#projets" class="hover:text-red-900">Tous les projets</a>
+          <a href="/index.html#contact" class="hover:text-red-900">Contact</a>
+        </nav>
+      </details>
+    </div>
+
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+        <span class="text-[2rem] md:text-[3rem] font-extrabold tracking-widest text-red-900/10 uppercase">
+            PORTFOLIO
+        </span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 md:py-20 space-y-16">
+
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-600" aria-label="Fil d'Ariane">
+      <ol class="flex flex-wrap gap-1">
+        <li><a href="/index.html" class="text-red-900 hover:underline">Accueil</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/index.html#projets" class="text-red-900 hover:underline">Projets</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-gray-700">Imprimante 3D miniature custom</li>
+      </ol>
+    </nav>
+
+    <!-- Titre + visuel -->
+    <section class="space-y-6">
+      <header>
+        <h1 class="text-3xl font-semibold text-gray-900 tracking-tight">
+          Imprimante 3D miniature custom
+        </h1>
+        <p class="text-gray-600 text-sm mt-2">
+          Projet personnel (2022, 17 ans)
+        </p>
+      </header>
+
+      <div class="rounded-lg overflow-hidden border border-gray-300 bg-gray-200">
+        <img
+          src="/photos/imprimante-1.png"
+          alt="Vue éclatée de l'imprimante 3D miniature en modélisation CAO"
+          class="w-full h-80 object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Détails -->
+    <section class="space-y-10 text-gray-700 text-base leading-relaxed">
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Contexte / besoin</h2>
+        <p>
+          Je voulais concevoir une imprimante 3D compacte, transportable, optimisée pour de
+          petites pièces techniques. Objectif : tout faire moi-même en CAO, y compris le choix
+          des composants mécaniques et électroniques.
+        </p>
+        <p class="mt-3">
+          Dimensions cibles de la machine : ~10×10×20 cm. Volume d’impression visé :
+          ~4×4×6 cm.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Ce que j’ai fait</h2>
+        <ul class="list-disc list-outside pl-5 space-y-2">
+          <li>Modélisation CAO complète sous Fusion 360.</li>
+          <li>Création des pièces structurelles et mécaniques.</li>
+          <li>Sélection des composants électroniques et des moteurs.</li>
+          <li>Intégration prévue de la tête d’impression et des axes.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Résultat</h2>
+        <p>
+          La modélisation est terminée à ~90 %. Les pièces existent, les composants sont choisis,
+          les fixations sont pensées. Il manque l’intégration électrique finale et la liaison
+          logicielle / firmware.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Ce que j’ai appris</h2>
+        <p>
+          Travail long terme sur une machine réelle : comment tout doit rentrer dans un volume
+          minuscule sans sacrifier la rigidité, comment organiser les axes, où faire passer les câbles.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Stack / outils utilisés</h2>
+        <ul class="flex flex-wrap gap-2 text-sm">
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Fusion 360 (CAO)</li>
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Modélisation mécanique</li>
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Conception de châssis</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Ressources</h2>
+        <dl class="space-y-4 text-sm">
+          <div>
+            <dt class="font-medium text-gray-900">Démo publique :</dt>
+            <dd class="text-gray-700">Pas de démo publique</dd>
+          </div>
+          <div>
+            <dt class="font-medium text-gray-900">Repo GitHub :</dt>
+            <dd class="text-gray-700">Projet non publié</dd>
+          </div>
+          <div>
+            <dt class="font-medium text-gray-900">Images / captures :</dt>
+            <dd class="text-gray-700">Oui (rendus et vue éclatée)</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section aria-labelledby="galerie-title" class="space-y-6">
+      <h2 id="galerie-title" class="text-xl font-semibold text-gray-900">Galerie</h2>
+
+      <div class="grid gap-4 md:grid-cols-2">
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/imprimante-1.png"
+               alt="Imprimante 3D miniature - vue 1"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/imprimante-2.png"
+               alt="Imprimante 3D miniature - vue 2"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/imprimante-4.jpg"
+               alt="Imprimante 3D miniature - vue 4 (JPG)"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/imprimante-5.jpg"
+               alt="Imprimante 3D miniature - vue 5 (JPG)"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- CTA retour -->
+    <section class="pt-8">
+      <a href="/index.html#projets"
+         class="inline-flex items-center rounded-md bg-red-900 text-white text-sm font-medium px-4 py-2 shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
+        ← Retour aux projets
+      </a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-sm mt-24">
+    <div class="max-w-4xl mx-auto px-4 py-10 space-y-4">
+      <p class="font-medium text-white">© 2025 Eliot MAMAN</p>
+      <p>maman.eliot7130@gmail.com • 06 59 60 35 41</p>
+    </div>
+  </footer>
+
+</body>
+</html>

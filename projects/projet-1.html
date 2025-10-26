@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bras robotique imprimé en 3D – Projet | Eliot MAMAN</title>
+  <meta name="description" content="Bras robotique 5 axes (~60 cm) conçu, imprimé et câblé par Eliot MAMAN : modélisation 3D, Arduino, C++, itérations mécaniques." />
+
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-white/80 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4 md:py-3">
+
+      <a href="/index.html" class="font-semibold text-lg md:text-xl text-gray-900 hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 rounded">
+        <span class="block">Eliot MAMAN</span>
+        <span class="block text-xs font-normal text-gray-500">Projet technique</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex flex-row gap-6 text-sm font-medium text-gray-700">
+        <a href="/index.html#projets" class="hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 rounded">Tous les projets</a>
+        <a href="/index.html#contact" class="hover:text-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 rounded">Contact</a>
+      </nav>
+
+      <!-- Mobile nav -->
+      <details class="relative md:hidden">
+        <summary class="p-2 border border-gray-300 rounded text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2 flex items-center cursor-pointer select-none">
+          <span class="sr-only">Menu</span>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </summary>
+
+        <nav class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-md flex flex-col gap-4 p-4 text-sm font-medium text-gray-700 z-50">
+          <a href="/index.html#projets" class="hover:text-red-900">Tous les projets</a>
+          <a href="/index.html#contact" class="hover:text-red-900">Contact</a>
+        </nav>
+      </details>
+    </div>
+
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+        <span class="text-[2rem] md:text-[3rem] font-extrabold tracking-widest text-red-900/10 uppercase">
+            PORTFOLIO
+        </span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 md:py-20 space-y-16">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-600" aria-label="Fil d'Ariane">
+      <ol class="flex flex-wrap gap-1">
+        <li><a href="/index.html" class="text-red-900 hover:underline">Accueil</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href="/index.html#projets" class="text-red-900 hover:underline">Projets</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-gray-700">Bras robotique imprimé en 3D</li>
+      </ol>
+    </nav>
+
+    <!-- Titre + visuel -->
+    <section class="space-y-6">
+      <header>
+        <h1 class="text-3xl font-semibold text-gray-900 tracking-tight">
+          Bras robotique imprimé en 3D (5 axes)
+        </h1>
+        <p class="text-gray-600 text-sm mt-2">
+          Projet personnel (2021, 16 ans)
+        </p>
+      </header>
+
+      <div class="rounded-lg overflow-hidden border border-gray-300 bg-gray-200">
+        <img
+          src="/photos/bras-1.jpg"
+          alt="Assemblage du bras robotique imprimé en 3D"
+          class="w-full h-80 object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Détails -->
+    <section class="space-y-10 text-gray-700 text-base leading-relaxed">
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Contexte / problème</h2>
+        <p>
+          À 16 ans, je voulais construire un bras robotique articulé d’environ 60 cm avec 5 axes
+          contrôlables. L’objectif : comprendre la mécanique, l’électronique et le code embarqué,
+          pas seulement “imprimer une pièce”.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Ce que j’ai fait</h2>
+        <ul class="list-disc list-outside pl-5 space-y-2">
+          <li>Modélisation de chaque articulation sous Fusion 360.</li>
+          <li>Impression 3D des pièces structurelles.</li>
+          <li>Branchement et câblage Arduino (C++ Arduino).</li>
+          <li>Réglage mécanique : réimpression, renforts, ajustements.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Résultat</h2>
+        <p>
+          Le bras fonctionne et a été réimprimé plusieurs fois pour gagner en rigidité.
+          J’ai obtenu un mouvement multi-axes pilotable. Le projet reste améliorable
+          (précision, couple, gestion des jeux mécaniques), mais la base est réelle.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Ce que j’ai appris</h2>
+        <p>
+          Gérer un projet perso complexe : design mécanique, contraintes physiques,
+          limites du plastique imprimé, et surtout la boucle
+          <em>conception → test → correction → itération</em>.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Stack / outils utilisés</h2>
+        <ul class="flex flex-wrap gap-2 text-sm">
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Fusion 360</li>
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Arduino / C++</li>
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Ultimaker Cura (réglages fins)</li>
+          <li class="px-3 py-1 rounded-full bg-white border border-gray-300 text-gray-800">Impression 3D FDM</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-gray-900 mb-3">Ressources</h2>
+        <dl class="space-y-4 text-sm">
+          <div>
+            <dt class="font-medium text-gray-900">Démo publique :</dt>
+            <dd class="text-gray-700">Pas de démo publique</dd>
+          </div>
+          <div>
+            <dt class="font-medium text-gray-900">Repo GitHub :</dt>
+            <dd class="text-gray-700">Projet non publié</dd>
+          </div>
+          <div>
+            <dt class="font-medium text-gray-900">Images / captures :</dt>
+            <dd class="text-gray-700">Oui (photos et rendus 3D)</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section aria-labelledby="galerie-title" class="space-y-6">
+      <h2 id="galerie-title" class="text-xl font-semibold text-gray-900">Galerie</h2>
+
+      <div class="grid gap-4 md:grid-cols-2">
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/bras-1.jpg"
+               alt="Bras robotique - vue générale"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/bras-2.jpg"
+               alt="Bras robotique - articulation et servo"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/bras-3.jpg"
+               alt="Bras robotique - CAO Fusion 360"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/bras-4.jpg"
+               alt="Bras robotique - pièce imprimée en 3D"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+        <figure class="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+          <img src="/photos/bras-5.png"
+               alt="Bras robotique - autre angle"
+               class="w-full h-64 object-cover">
+          <figcaption class="text-xs text-gray-600 p-3"> </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- CTA retour -->
+    <section class="pt-8">
+      <a href="/index.html#projets"
+         class="inline-flex items-center rounded-md bg-red-900 text-white text-sm font-medium px-4 py-2 shadow hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
+        ← Retour aux projets
+      </a>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-sm mt-24">
+    <div class="max-w-4xl mx-auto px-4 py-10 space-y-4">
+      <p class="font-medium text-white">© 2025 Eliot MAMAN</p>
+      <p>maman.eliot7130@gmail.com • 06 59 60 35 41</p>
+    </div>
+  </footer>
+
+</body>
+</html>
