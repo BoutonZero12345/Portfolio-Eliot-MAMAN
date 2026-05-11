@@ -510,10 +510,10 @@ button { cursor: pointer; border: none; background: none; }
 
 /* ── CONTACT ── */
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3rem;
-  align-items: start;
 }
 .contact-intro {
   font-size: 1.05rem;
